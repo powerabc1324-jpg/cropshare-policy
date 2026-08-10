@@ -48,10 +48,14 @@
 
 <h2>1. 요약</h2>
 <ul>
-  <li>앱은 <strong>사용자 정보를 수집하지 않습니다.</strong> 개발자가 운영하는 서버가 없습니다.</li>
-  <li>화면 내용은 <strong>같은 네트워크 안에서만</strong> 오가며, 외부로 전송되거나 저장되지 않습니다.</li>
-  <li>광고 식별자, 위치, 연락처, 계정 정보를 사용하지 않습니다.</li>
-  <li>분석 도구나 광고 SDK를 넣지 않았습니다.</li>
+  <li><strong>개발자는 어떤 정보도 수집하지 않습니다.</strong> 개발자가 운영하는 서버가 없습니다.</li>
+  <li>화면 내용은 <strong>같은 네트워크 안에서만</strong> 오가며, 외부로 전송되거나 저장되지 않습니다.
+      광고나 결제와도 아무 관련이 없습니다.</li>
+  <li>무료로 쓰는 동안에는 <strong>구글 AdMob</strong> 이 광고를 보여 줍니다.
+      이때 구글이 광고 ID 등을 사용합니다. 자세한 내용은 6항에 있습니다.</li>
+  <li>구독하면 광고가 나오지 않고, 광고 관련 정보 수집도 일어나지 않습니다.</li>
+  <li>결제는 <strong>구글 Play 결제</strong> 로만 이루어지며 앱은 결제 수단을 보지 않습니다.</li>
+  <li>분석 도구는 넣지 않았습니다.</li>
 </ul>
 
 <h2>2. 앱이 다루는 정보</h2>
@@ -130,22 +134,51 @@
 
 <h2>5. 아동</h2>
 <p>
-  앱은 특정 연령대를 대상으로 하지 않으며, 나이를 포함한 어떤 개인정보도 수집하지 않습니다.
+  앱은 특정 연령대를 대상으로 하지 않으며, 어린이를 대상으로 만들어지지 않았습니다.
+  개발자는 나이를 포함한 어떤 개인정보도 수집하지 않습니다.
+  광고에서 쓰이는 정보는 6항에 적어 두었습니다.
 </p>
 
-<h2>6. 제3자 제공</h2>
+<h2>6. 광고와 결제</h2>
 <p>
-  개발자가 수집하는 정보가 없으므로 제3자에게 제공하거나 판매하는 정보도 없습니다.
-  앱에는 광고나 분석 도구가 들어 있지 않습니다.
+  무료로 쓰는 동안에는 공유를 시작할 때 광고가 나옵니다.
+  광고는 <strong>구글 AdMob</strong> 이 제공하며, 이 과정에서 구글이
+  기기의 <strong>광고 ID</strong>, 대략적인 기기 정보, 대략적인 위치(국가 수준)를
+  광고를 고르고 성과를 재는 데 사용합니다.
+</p>
+<p>
+  이 정보는 구글이 다루며 개발자는 볼 수 없습니다.
+  구글이 어떻게 다루는지는
+  <a href="https://policies.google.com/technologies/partner-sites">구글 파트너 사이트 정책</a>
+  에서 확인할 수 있습니다.
+</p>
+<p>
+  기기 설정에서 <strong>광고 ID 삭제</strong> 또는 <strong>맞춤 광고 사용 중지</strong> 를
+  고르면 관심사 기반 광고를 끌 수 있습니다.
+  안드로이드에서는 설정 → 구글 → 광고 에 있습니다.
+</p>
+<p>
+  구독은 <strong>구글 Play 결제</strong> 를 통해서만 이루어집니다.
+  결제 정보는 구글이 처리하며 앱은 카드 번호 같은 결제 수단을 받지도 저장하지도 않습니다.
+  앱이 구글에서 받는 것은 구독이 살아 있는지 여부뿐입니다.
+</p>
+<p>
+  구독하면 광고가 나오지 않으며, 위의 광고 관련 정보 수집도 일어나지 않습니다.
 </p>
 
-<h2>7. 방침 변경</h2>
+<h2>7. 그 밖의 제3자 제공</h2>
+<p>
+  위에 적은 광고와 결제를 빼면, 개발자가 제3자에게 제공하거나 판매하는 정보는 없습니다.
+  공유되는 화면 내용은 광고나 결제와 아무 관련이 없으며 기기 밖으로 나가지 않습니다.
+</p>
+
+<h2>8. 방침 변경</h2>
 <p>
   앱에 기능이 추가되어 다루는 정보가 달라지면 이 문서를 고치고 최종 수정일을 바꿉니다.
   중요한 변경은 앱 안에서도 알립니다.
 </p>
 
-<h2>8. 문의</h2>
+<h2>9. 문의</h2>
 <p>
   개인정보 처리에 관한 문의는 아래로 보내 주세요.<br>
   <strong>powerabc1324@gmail.com</strong>
@@ -163,10 +196,15 @@
 
 <h2>1. Summary</h2>
 <ul>
-  <li>The app <strong>does not collect any user information.</strong> There is no server operated by the developer.</li>
-  <li>Screen content travels <strong>only within your local network</strong> and is never sent or stored elsewhere.</li>
-  <li>No advertising identifiers, location, contacts, or account information are used.</li>
-  <li>No analytics or advertising SDKs are included.</li>
+  <li><strong>The developer collects nothing.</strong> There is no developer-run server.</li>
+  <li>Screen content travels <strong>only within your local network</strong>. It is never uploaded
+      or stored, and it has no connection to ads or payments.</li>
+  <li>While you use the app for free, <strong>Google AdMob</strong> shows ads and Google uses your
+      advertising ID and similar data. See section 6.</li>
+  <li>Subscribers see no ads, and none of that ad-related collection happens for them.</li>
+  <li>Payments go through <strong>Google Play Billing</strong> only; the app never sees your
+      payment method.</li>
+  <li>No analytics tools are included.</li>
 </ul>
 
 <h2>2. Information the app handles</h2>
@@ -245,22 +283,51 @@
 
 <h2>5. Children</h2>
 <p>
-  The app is not directed at any particular age group and collects no personal information, including age.
+  The app is not directed at any particular age group and is not made for children.
+  The developer collects no personal information, including age.
+  Information used for ads is described in section 6.
 </p>
 
-<h2>6. Sharing with third parties</h2>
+<h2>6. Ads and payments</h2>
 <p>
-  Because the developer collects nothing, there is nothing to share or sell. The app contains no
-  advertising or analytics components.
+  While you use the app for free, an ad plays before sharing starts.
+  Ads are served by <strong>Google AdMob</strong>. In the process Google uses your
+  device's <strong>advertising ID</strong>, coarse device information and approximate
+  location (country level) to select ads and measure their performance.
+</p>
+<p>
+  Google handles this information; the developer cannot see it. See
+  <a href="https://policies.google.com/technologies/partner-sites">Google's partner sites policy</a>
+  for details.
+</p>
+<p>
+  You can turn off interest-based ads by deleting your advertising ID or opting out of
+  personalised ads in your device settings. On Android this is under
+  Settings &rarr; Google &rarr; Ads.
+</p>
+<p>
+  Subscriptions go through <strong>Google Play Billing</strong> only. Google processes the
+  payment; the app never receives or stores card details. All the app learns from Google is
+  whether a subscription is currently active.
+</p>
+<p>
+  Subscribers see no ads, and none of the ad-related collection above takes place for them.
 </p>
 
-<h2>7. Changes to this policy</h2>
+<h2>7. Other third parties</h2>
+<p>
+  Apart from the ads and payments described above, the developer shares or sells nothing to
+  third parties. Shared screen content has no connection to ads or payments and never leaves
+  your devices.
+</p>
+
+<h2>8. Changes to this policy</h2>
 <p>
   If new features change what the app handles, this document will be updated and the date above changed.
   Significant changes will also be announced inside the app.
 </p>
 
-<h2>8. Contact</h2>
+<h2>9. Contact</h2>
 <p>
   For questions about privacy, please contact:<br>
   <strong>powerabc1324@gmail.com</strong>
