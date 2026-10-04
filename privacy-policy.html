@@ -39,7 +39,7 @@
 <div class="lang"><a href="#ko">한국어</a> <a href="#en">English</a></div>
 
 <h1 id="ko">CropShare 개인정보처리방침</h1>
-<p class="updated">최종 수정일: 2026-09-15</p>
+<p class="updated">최종 수정일: 2026-10-04</p>
 
 <p>
   CropShare(이하 "앱")는 사용자가 지정한 화면 영역을 같은 Wi-Fi 네트워크에 있는
@@ -77,10 +77,25 @@
   번호는 기기 메모리에만 있으며 공유를 끝내면 사라집니다.
 </p>
 
+<h3>기억한 기기</h3>
+<p>
+  수신 기기가 번호를 한 번 맞히면, 보내는 기기가 그 브라우저에 무작위로 만든 값(쿠키)을 하나 줍니다.
+  다음부터는 이 값으로 그 기기를 알아보고 번호 없이 들어오게 합니다.
+  보내는 기기에는 이 값을 되돌릴 수 없게 바꾼 값(해시)과 마지막으로 쓴 시각만 저장합니다.
+  이름, 기기 정보, 위치 같은 개인정보는 담기지 않으며 기기 밖으로 나가지 않습니다.
+</p>
+<p>
+  쿠키는 최대 1년 동안 유지됩니다. 보내는 기기의 설정 &gt; 접속 &gt; 기억한 기기에서
+  <strong>모두 잊기</strong>를 누르면 그 즉시 모든 기기가 다시 번호를 넣어야 합니다.
+  수신 기기 쪽에서는 브라우저의 사이트 데이터를 지우면 됩니다.
+</p>
+
 <h3>기기 이름</h3>
 <p>
-  수신 기기가 주변에서 찾을 수 있도록, 공유 중에는 기기 모델명(예: <code>SM-X910</code>)이
-  같은 네트워크에 알려집니다. 이 정보는 네트워크 밖으로 나가지 않으며 공유를 끝내면 중단됩니다.
+  수신 기기가 주변에서 찾을 수 있도록, 공유 중에는 기기 모델명(예: <code>SM-X910</code>)과
+  <code>cropshare.local</code> 이라는 이름이 이 기기의 같은 네트워크 주소와 함께 알려집니다.
+  이 이름 덕분에 장소를 옮겨 주소가 바뀌어도 같은 북마크로 들어올 수 있습니다.
+  이 정보는 네트워크 밖으로 나가지 않으며 공유를 끝내면 중단됩니다.
 </p>
 
 <h3>카메라 (수신 앱)</h3>
@@ -102,8 +117,13 @@
     <td>같은 기기에 다시 접속하기 쉽도록</td>
     <td>기기 내부 저장소</td>
   </tr>
+  <tr>
+    <td>기억한 기기의 해시와 마지막 사용 시각</td>
+    <td>번호를 맞힌 적 있는 기기를 다시 알아보기 위해 (최대 200대)</td>
+    <td>기기 내부 저장소</td>
+  </tr>
 </table>
-<p>두 항목 모두 기기 안에만 있으며, 앱을 삭제하면 함께 지워집니다.</p>
+<p>모든 항목이 기기 안에만 있으며, 앱을 삭제하면 함께 지워집니다.</p>
 
 <h2>3. 사용하는 권한</h2>
 <table>
@@ -129,7 +149,8 @@
 </div>
 <p>
   접속 번호는 여러 번 틀리면 일정 시간 접속이 막힙니다. 공유를 시작할 때마다 번호가 새로 만들어지므로
-  지난번 번호로는 접속할 수 없습니다.
+  지난번 번호로는 접속할 수 없습니다. 다만 번호를 한 번 맞힌 기기는 기억되어 다음에도 번호 없이 들어옵니다.
+  모임이나 반이 바뀌면 설정에서 <strong>모두 잊기</strong>를 눌러 주세요.
 </p>
 
 <h2>5. 아동</h2>
@@ -187,7 +208,7 @@
 <hr>
 
 <h1 id="en">CropShare Privacy Policy</h1>
-<p class="updated">Last updated: 2026-09-15</p>
+<p class="updated">Last updated: 2026-10-04</p>
 
 <p>
   CropShare ("the app") sends a screen area you choose to other devices on the same Wi-Fi network.
@@ -226,10 +247,25 @@
   your screen. The code exists only in device memory and disappears when sharing ends.
 </p>
 
+<h3>Remembered devices</h3>
+<p>
+  Once a viewer enters the correct code, the sending device gives that browser a random value (a cookie).
+  Next time it recognises the device by this value and lets it in without the code.
+  The sending device stores only a one-way hash of the value and when it was last used.
+  No name, device details, location or other personal information is involved, and nothing leaves the device.
+</p>
+<p>
+  The cookie lasts up to one year. On the sending device, Settings &gt; Connection &gt; Remembered devices
+  &gt; <strong>Forget all</strong> makes every device enter the code again. On a viewer, clearing the
+  browser's site data removes it.
+</p>
+
 <h3>Device name</h3>
 <p>
-  While sharing, your device model name (for example <code>SM-X910</code>) is announced on the local
-  network so viewers can find it. This never leaves the network and stops when sharing ends.
+  While sharing, your device model name (for example <code>SM-X910</code>) and the name
+  <code>cropshare.local</code> are announced on the local network together with this device's local
+  address, so viewers can find it. Thanks to the name, the same bookmark keeps working when you move and
+  the address changes. This never leaves the network and stops when sharing ends.
 </p>
 
 <h3>Camera (viewer app)</h3>
@@ -251,8 +287,13 @@
     <td>To reconnect to the same device easily</td>
     <td>Device storage</td>
   </tr>
+  <tr>
+    <td>Hashes of remembered devices and when they were last used</td>
+    <td>To recognise devices that entered the code before (up to 200)</td>
+    <td>Device storage</td>
+  </tr>
 </table>
-<p>Both stay on your device and are removed when you uninstall the app.</p>
+<p>Everything stays on your device and is removed when you uninstall the app.</p>
 
 <h2>3. Permissions used</h2>
 <table>
@@ -278,7 +319,8 @@
 </div>
 <p>
   Repeated wrong codes block connections for a while. A new code is generated each time sharing starts,
-  so previous codes no longer work.
+  so previous codes no longer work. Devices that entered the correct code once are remembered and come
+  back without it; use <strong>Forget all</strong> in Settings when a group or class changes.
 </p>
 
 <h2>5. Children</h2>
